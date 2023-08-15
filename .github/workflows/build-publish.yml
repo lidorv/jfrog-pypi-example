@@ -1,4 +1,4 @@
-name: "JFrog Integration Example"
+name: "JFrog PyPI Example"
 on: push
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
          run: python setup.py sdist bdist_wheel
          
        - name: Publish
-         run: jf rt upload dist/ pypi/
+         run: jf rt upload dist/ lidor-pypi/
          
        - name: Publish Build info With JFrog CLI
          run: |
