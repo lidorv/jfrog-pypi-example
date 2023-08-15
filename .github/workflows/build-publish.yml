@@ -17,9 +17,6 @@ jobs:
            
        - name: Set CLI Config
          run: jf pip-config --global=true --repo-resolve=lidor-pypi
-
-       - name: Install Specific Deps
-         run: jf pip install Django Flask
            
        - name: Install Deps
          run: jf pip install .
